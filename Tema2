@@ -36,3 +36,9 @@ plot(t, Semnal_Reconstruit, t, Semnal_Dreptunghiular);
 figure(2);
 stem([0:N] * w0, A), title('Spectrul semnalului Dreptunghiular');
 % reprezentam A in functie de frecventa fundamentala * numarul coeficientului corespunzator
+
+% orice semnal periodic se poate aproxima printr-o suma infinita de sin si
+% cos de diferite frecvente,fiecare avand un anumit coeficient.Coeficientii reprezinta spectrul
+% Semnalul reconstruit folosind un numar finit de termeni se apropie ca
+% forma de semnalul original cu o anumita marja de eroare,care poate fi mai
+% mica daca numarul de coeficienti creste.
