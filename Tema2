@@ -18,7 +18,7 @@ Semnal_Reconstruit = 0;
 componenta_continua = (1 / T) * integral(@(t) Semnal_Initial(t,0),0,T); % componenta continua a semnalului
 
 for k = 1:1:50
-    coeficienti(k) = (1 / T) * integral(@(t) Semnal_Initial(t,k - 7 ),0,T);
+    coeficienti(k) = (1 / T) * integral(@(t) Semnal_Initial(t,k - 25 ),0,T);
     Semnal_Reconstruit = Semnal_Reconstruit + coeficienti(k) * exp( 1j * (k - 25) * w0 * t);
 end
 % in for calculam coeficientii SFC si reconstruim semnalul prin insumarea fiecarui termen
